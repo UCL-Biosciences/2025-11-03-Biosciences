@@ -417,6 +417,20 @@ please preview your site before committing, and make sure to run
   <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
 </p>
 <p>
+  <strong>Prerequesites. </strong> The tools given below are <strong>essential</strong> for everything we will do in the course (and for most computational biology work). You must make sure you have them all available before attending the workshops. Workshops will not have any time available for helping with setup problems. If you are having problems installing anything, please do one of the following:
+  - Book a slot to discuss setup: <a href="https://outlook.office.com/bookwithme/user/d23d2d9663fa4276b318d8ae8f40ccbb@ucl.ac.uk/meetingtype/GP1vEk6SdU6fTvgYLBKK8Q2?anonymous&ismsaljsauthenabled&ep=mlink">Booking link</a>.
+  - Attend the pre-training setup clinic on Thursday 30 October in the Anatomy Building common room or <a href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_MzNiMjlmY2UtNjA3MS00OThjLWIwMzUtOWE1YmQ2OWU0MTk0%40thread.v2/0?context=%7b%22Tid%22%3a%221faf88fe-a998-4c5b-93c9-210a11d9a5c2%22%2c%22Oid%22%3a%22bd2be10f-6ee3-44a1-8455-ca337e811253%22%7d">on Teams</a>.
+  - Arrange with us by email to come 30 mins early to the first session.
+
+Instructions for installing software can be found <a href="https://carpentries.github.io/workshop-template/#setup">here</a>. You will need:
+
+ - The Bash Shell (Git Bash for windows is preferred to WSL)
+ - Git
+ - A conda installation. We recommend <a href="https://conda-forge.org/download/">conda forge</a> but you may already have a different conda installed. If you have conda installed already, there is no need to install conda forge.
+ - Python
+ - <a href="https://code.visualstudio.com/download">Visual Studio Code</a>
+ - An account on <a href="https://www.rc.ucl.ac.uk/docs/Account_Services/">Myriad</a>.
+ - <a href="https://cyberduck.io/">Cyberduck</a> for transferring files to and from the cluster.
   
 </p>
 
