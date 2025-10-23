@@ -4,12 +4,12 @@ layout: workshop      # DON'T CHANGE THIS.
 # online workshop) are available at
 # https://carpentries.github.io/workshop-template/customization/index.html
 venue: "UCL"        # brief name of the institution that hosts the workshop without address (e.g., "Euphoric State University")
-address: "various (detailed below)"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria"), videoconferencing URL, or 'online'
+address: "various UCL Bloomsbury rooms (detailed below)"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria"), videoconferencing URL, or 'online'
 flag_in_person: "true"    # Provide "true" to include text in the general information, stressing the workshop is in-person attendance only.
 country: "gb"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes) for the institution that hosts the workshop
 language: "english"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the workshop
-latitude: ""        # decimal latitude of workshop venue (use https://www.latlong.net/)
-longitude: ""       # decimal longitude of the workshop venue (use https://www.latlong.net)
+latitude: false        # decimal latitude of workshop venue (use https://www.latlong.net/)
+longitude: false       # decimal longitude of the workshop venue (use https://www.latlong.net)
 humandate: "Nov-Dec 2025"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
 humantime: "#"    # human-readable times for the workshop e.g., "9:00 am - 4:30 pm CEST (7:00 am - 2:30 pm UTC)"
 startdate: 2025-11-05      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
@@ -104,28 +104,6 @@ Edit the general explanatory paragraph below if you want to change
 the pitch.
 {% endcomment %}
 
-<p>
-<strong><a href="https://carpentries.org">The Carpentries</a></strong> project comprises the <a
-href="{{site.swc_site}}">Software Carpentry</a>, <a href="{{site.dc_site}}">Data Carpentry</a>, and
-<a href="{{site.lc_site}}">Library Carpentry</a> communities of Instructors, Trainers, Maintainers,
-helpers, and supporters who share a mission to teach foundational computational and data science
-skills to researchers.
-<p align="center">
-  <em>
-  <strong>Want to learn more and stay engaged with The Carpentries?</strong> Carpentries Clippings is The Carpentries' biweekly newsletter, where we share community news, community job postings, and more.
-Sign up to receive future editions and read our full archive: <a href="https://carpentries.org/newsletter/">https://carpentries.org/newsletter/</a>
-  </em>
-</p>
-{% if site.carpentry == "swc" %}
-{% include swc/intro.html %}
-{% elsif site.carpentry == "dc" %}
-{% include dc/intro.html %}
-{% elsif site.carpentry == "lc" %}
-{% include lc/intro.html %}
-{% elsif site.carpentry == "ucl-hpcc" %}
-{% include ucl-hpcc/intro.html %}
-{% endif %}
-
 {% if site.pilot %}
 This is a pilot workshop, testing out a lesson that is still under development. The lesson authors would appreciate any feedback you can give them about the lesson content and suggestions for how it could be further improved.
 {% endif %}
@@ -172,10 +150,6 @@ address.
 <p id="where">
   <strong>Where:</strong>
   {{page.address}}.
-  Get directions with
-  <a href="//www.openstreetmap.org/?mlat={{page.latitude}}&mlon={{page.longitude}}&zoom=16">OpenStreetMap</a>
-  or
-  <a href="//maps.google.com/maps?q={{page.latitude}},{{page.longitude}}">Google Maps</a>.
   {% if page.what3words %}
     What3Words location:
     <a href="https://what3words.com/{{page.what3words}}">///{{page.what3words}}</a>.
@@ -234,14 +208,8 @@ special instructions.
 <p id="accessibility">
   <strong>Accessibility:</strong>
   We are committed to making this workshop
-  accessible to everybody. 
+  accessible to everybody. If you require any adjustments or support to attend, please let us know ahead of the workshops.
 {% if online == "false" %}
-  The workshop organizers have checked that:
-<p>
-  <ul>
-    <li>The room is wheelchair / scooter accessible.</li>
-    <li>Accessible restrooms are available.</li>
-  </ul>
 {% endif %}
 </p>
 <p>We are dedicated to providing a positive and accessible learning environment for all. 
