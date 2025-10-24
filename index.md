@@ -10,11 +10,11 @@ country: "gb"      # lowercase two-letter ISO country code such as "fr" (see htt
 language: "english"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the workshop
 latitude: false        # decimal latitude of workshop venue (use https://www.latlong.net/)
 longitude: false       # decimal longitude of the workshop venue (use https://www.latlong.net)
-humandate: "November 2025"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humandate: "November/December 2025"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
 humantime: ""    # human-readable times for the workshop e.g., "9:00 am - 4:30 pm CEST (7:00 am - 2:30 pm UTC)"
 startdate: 2025-11-05      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2025-12-05        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["Contributors from Biosciences, ARC, Learn 2 Discover and Microsoft"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+instructor: ["Contributors from UCL's Biosciences and ARC, plus Learn To Discover and Microsoft"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 email: ["james.d.gilbert@ucl.ac.uk"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes: https://hackmd.io/GzP_OLqISf6e-6lmFnuv6g # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
@@ -103,9 +103,9 @@ Edit the general explanatory paragraph below if you want to change
 the pitch.
 {% endcomment %}
 
-{% if site.pilot %}
-This is a pilot workshop, testing out a lesson that is still under development. The lesson authors would appreciate any feedback you can give them about the lesson content and suggestions for how it could be further improved.
-{% endif %}
+Thank you for your interest in Computational Training coordinated by UCL Division of Biosciences and Centre for Advanced Research Computing (ARC). The training will be a series of five half-day workshops providing an introduction and overview of the essential skills required for computational research in the biosciences.
+
+The workshop details are outlined below. The sessions link together so we recommend that you attend all workshops to get the most out of the series as a whole. The sessions will be run by  computational experts from Biosciences, ARC, Learn To Discocer, and Microsoft. We hope this will create an interesting and varied environment for participants to explore themes related to computational research.
 
 {% if page.flag_in_person == "true" %}
 <div class="alert alert-warning">
