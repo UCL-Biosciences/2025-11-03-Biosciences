@@ -394,7 +394,7 @@ please preview your site before committing, and make sure to run
 
 Instructions for installing software can be found <a href="https://carpentries.github.io/workshop-template/#setup">here</a>. You will need:
 <ul>
- <li>The Bash Shell (Git Bash for windows is preferred to WSL)</li>
+ <li>The Bash Shell (Git Bash for windows, not WSL)</li>
  <li>Git</li>
  <li>A conda installation. We recommend <a href="https://conda-forge.org/download/">conda forge</a> but you may already have a different conda installed. If you have conda installed already, there is no need to install conda forge.</li>
  <li>Python</li>
