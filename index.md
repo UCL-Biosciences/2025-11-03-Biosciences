@@ -14,7 +14,7 @@ humandate: "November/December 2025"    # human-readable dates for the workshop (
 humantime: ""    # human-readable times for the workshop e.g., "9:00 am - 4:30 pm CEST (7:00 am - 2:30 pm UTC)"
 startdate: 2025-11-05      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2025-12-05        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["Contributors from UCL's Biosciences and ARC, plus Learn To Discover and Microsoft"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+instructor: ["Contributors from UCL Biosciences and ARC, plus Learn To Discover and Microsoft"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 email: ["james.d.gilbert@ucl.ac.uk"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes: https://hackmd.io/GzP_OLqISf6e-6lmFnuv6g # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
@@ -314,27 +314,9 @@ SURVEYS - DO NOT EDIT SURVEY LINKS
 {% endcomment %}
 <h2 id="surveys">Surveys</h2>
 <p>Please be sure to complete these surveys before and after the workshop.</p>
-{% if site.carpentry == "incubator" %}
-<p><a href="{{ site.incubator_pre_survey }}">Pre-workshop Survey</a></p>
-<p><a href="{{ site.incubator_post_survey }}">Post-workshop Survey</a></p>
-{% elsif site.incubator_pre_survey or site.incubator_post_survey %}
-<div class="alert alert-danger">
-WARNING: you have defined custom pre- and/or post-survey links for
-a workshop not configured for The Carpentries Incubator
-(the value of `curriculum` is not set to `incubator` in `_config.yml`).
-Please comment out the `incubator_pre_survey` and `incubator_post_survey` fields
-in `_config.yml` or, if this workshop is teaching a lesson in the Incubator,
-change the value of `carpentry` to `incubator`.
-</div>
-{% elsif site.carpentry == "ucl-hpcc" %}
-{% include ucl-hpcc/surveys.html %}
-{% else %}
-<p><a href="{{ site.pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
-<p><a href="{{ site.post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
-{% endif %}
-
-<hr/>
-
+<p><a href="https://forms.office.com/e/m2daKvJW01">Pre-workshop Survey</a></p>
+Post-workshop survey to be added.
+# <p><a href="{{ site.incubator_post_survey }}">Post-workshop Survey</a></p>
 
 {% comment %}
 SCHEDULE
@@ -402,26 +384,24 @@ please preview your site before committing, and make sure to run
   In addition, you will need an up-to-date web browser.
 </p>
 <p>
-  We maintain a list of common issues that occur during installation as a reference for instructors
-  that may be useful on the
-  <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
-</p>
-<p>
   <strong>Prerequesites. </strong> The tools given below are <strong>essential</strong> for everything we will do in the course (and for most computational biology work). You must make sure you have them all available before attending the workshops. Workshops will not have any time available for helping with setup problems. If you are having problems installing anything, please do one of the following:
-  - Book a slot to discuss setup: <a href="https://outlook.office.com/bookwithme/user/d23d2d9663fa4276b318d8ae8f40ccbb@ucl.ac.uk/meetingtype/GP1vEk6SdU6fTvgYLBKK8Q2?anonymous&ismsaljsauthenabled&ep=mlink">Booking link</a>.
-  - Attend the pre-training setup clinic on Thursday 30 October in the Anatomy Building common room or <a href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_MzNiMjlmY2UtNjA3MS00OThjLWIwMzUtOWE1YmQ2OWU0MTk0%40thread.v2/0?context=%7b%22Tid%22%3a%221faf88fe-a998-4c5b-93c9-210a11d9a5c2%22%2c%22Oid%22%3a%22bd2be10f-6ee3-44a1-8455-ca337e811253%22%7d">on Teams</a>.
-  - Arrange with us by email to come 30 mins early to the first session.
+<ul>
+  <li>Book a slot to discuss setup: <a href="https://outlook.office.com/bookwithme/user/d23d2d9663fa4276b318d8ae8f40ccbb@ucl.ac.uk/meetingtype/GP1vEk6SdU6fTvgYLBKK8Q2?anonymous&ismsaljsauthenabled&ep=mlink">Booking link</a>.</li>
+  <li>Attend the pre-training setup clinic on Thursday 30 October in the Anatomy Building common room or <a href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_MzNiMjlmY2UtNjA3MS00OThjLWIwMzUtOWE1YmQ2OWU0MTk0%40thread.v2/0?context=%7b%22Tid%22%3a%221faf88fe-a998-4c5b-93c9-210a11d9a5c2%22%2c%22Oid%22%3a%22bd2be10f-6ee3-44a1-8455-ca337e811253%22%7d">on Teams</a>.</li>
+  <li>Attend an <a href="https://www.ucl.ac.uk/advanced-research-computing/community-events/drop-sessions">ARC drop-in session</a>.</li>
+  <li>Arrange with us by email to come 30 mins early to the first session.</li>
+</ul>
 
 Instructions for installing software can be found <a href="https://carpentries.github.io/workshop-template/#setup">here</a>. You will need:
-
- - The Bash Shell (Git Bash for windows is preferred to WSL)
- - Git
- - A conda installation. We recommend <a href="https://conda-forge.org/download/">conda forge</a> but you may already have a different conda installed. If you have conda installed already, there is no need to install conda forge.
- - Python
- - <a href="https://code.visualstudio.com/download">Visual Studio Code</a>
- - An account on <a href="https://www.rc.ucl.ac.uk/docs/Account_Services/">Myriad</a>.
- - <a href="https://cyberduck.io/">Cyberduck</a> for transferring files to and from the cluster.
-  
+<ul>
+ <li>The Bash Shell (Git Bash for windows is preferred to WSL)</li>
+ <li>Git</li>
+ <li>A conda installation. We recommend <a href="https://conda-forge.org/download/">conda forge</a> but you may already have a different conda installed. If you have conda installed already, there is no need to install conda forge.</li>
+ <li>Python</li>
+ <li><a href="https://code.visualstudio.com/download">Visual Studio Code</a></li>
+ <li>An account on <a href="https://www.rc.ucl.ac.uk/docs/Account_Services/">Myriad</a>.</li>
+ <li><a href="https://cyberduck.io/">Cyberduck</a> for transferring files to and from the cluster.</li>
+</ul>
 </p>
 
 {% comment %}
