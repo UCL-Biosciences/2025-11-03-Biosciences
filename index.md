@@ -384,7 +384,7 @@ please preview your site before committing, and make sure to run
   In addition, you will need an up-to-date web browser.
 </p>
 <p>
-  <strong>Prerequesites. </strong> The tools given below are <strong>essential</strong> for everything we will do in the course (and for most computational biology work). You must make sure you have them all available before attending the workshops. Workshops will not have any time available for helping with setup problems. If you are having problems installing anything, please do one of the following:
+  <strong>Prerequesites. </strong> The tools given below are <strong>essential</strong> for everything we will do in the course (and for a lot of computational biology work). You must make sure you have them all available before attending the workshops. Workshops will not have any time available for helping with setup problems. If you are having problems installing anything, please do one of the following:
 <ul>
   <li>Book a slot to discuss setup: <a href="https://outlook.office.com/bookwithme/user/d23d2d9663fa4276b318d8ae8f40ccbb@ucl.ac.uk/meetingtype/GP1vEk6SdU6fTvgYLBKK8Q2?anonymous&ismsaljsauthenabled&ep=mlink">Booking link</a>.</li>
   <li>Attend the pre-training setup clinic on Thursday 30 October in the Anatomy Building common room or <a href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_MzNiMjlmY2UtNjA3MS00OThjLWIwMzUtOWE1YmQ2OWU0MTk0%40thread.v2/0?context=%7b%22Tid%22%3a%221faf88fe-a998-4c5b-93c9-210a11d9a5c2%22%2c%22Oid%22%3a%22bd2be10f-6ee3-44a1-8455-ca337e811253%22%7d">on Teams</a>.</li>
