@@ -228,9 +228,9 @@ Modify or remove the block below if you plan to record the workshop.
 {% endcomment %}
 <p id="recordings">
   <strong>Workshop Recordings:</strong>
-  Carpentries workshops are designed to be interactive rather than lecture-based, with lessons that build upon one another.
+  The workshops are designed to be interactive rather than lecture-based, with lessons that build upon one another.
   To foster a positive learning environment, we strongly recommend that participants join in real time.
-  As a result, workshop recordings are not recommended and may not be available to learners.
+  As a result, workshop recordings are not recommended and will not be available.
 </p>
 {% comment %}
 CONTACT EMAIL ADDRESS
