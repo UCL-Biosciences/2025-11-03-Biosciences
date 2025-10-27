@@ -316,7 +316,6 @@ SURVEYS - DO NOT EDIT SURVEY LINKS
 <p>Please be sure to complete these surveys before and after the workshop.</p>
 <p><a href="https://forms.office.com/e/m2daKvJW01">Pre-workshop Survey</a></p>
 Post-workshop survey to be added.
-# <p><a href="{{ site.incubator_post_survey }}">Post-workshop Survey</a></p>
 
 {% comment %}
 SCHEDULE
